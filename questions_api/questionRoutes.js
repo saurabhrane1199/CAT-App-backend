@@ -11,6 +11,7 @@ router.get('/get/:subject', (req,res) => {
                     
     conn.query(query, (err,result, fields) => {
         if(err){
+            console.log(err)
             res.status(400)
             res.send("Database Error")
         }

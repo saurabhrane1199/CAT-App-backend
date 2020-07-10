@@ -31,7 +31,7 @@ app.listen(PORT,()=>{
     console.log("Server is running on Port\n"+PORT);
 });
 
-mongoose.connect('mongodb://localhost:27017/cat')
+mongoose.connect("mongodb+srv://admin:admin@cluster0.l2cwt.mongodb.net/cat?retryWrites=true&w=majority")
 const db = mongoose.connection
 db.on('error', console.error)
 db.once('open', ()=>{

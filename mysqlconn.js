@@ -8,11 +8,18 @@ var conn = mysql.createConnection({
     database : "cat1"
 });
 
-conn.connect( err => {
+var conn2 = mysql.createConnection({
+    host : "sql12.freemysqlhosting.net",
+    user : "sql12354005",
+    password : "HiPUQu2jUd",
+    database : "sql12354005"
+});
+
+conn2.connect( err => {
     if(err){
         console.log(err)
         return}
     console.log("MySQL Connection Succesful")
 });
 
-module.exports = conn;
+module.exports = conn2;
