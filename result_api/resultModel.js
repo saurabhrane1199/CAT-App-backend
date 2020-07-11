@@ -6,7 +6,7 @@ const resultSchema =  new Schema({
     subject : {type : String},
     totalScore : {type : Number},
     questionsAttempted : {type : Array},
-    userId : { type : Schema.Types.ObjectId },
+    userId : { type : String },
     wrongAnswers : {type : Array},
     testTime : { type:Date, default: Date.now}
     

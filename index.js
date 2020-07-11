@@ -5,7 +5,6 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const PORT = process.env.PORT || 4000
 const morgan = require('morgan')
-const conn = require('./mysqlconn');
 
 
 app.use(cors())
